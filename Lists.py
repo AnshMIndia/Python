@@ -1,0 +1,28 @@
+MyList=[0,1,2,3,4,5,6,7,8,9]
+MyList.append(10)
+print(MyList)
+MyListCopy=MyList.copy()
+print(MyListCopy)
+print(MyList.count(1))
+MyListCopy.clear()
+print(MyListCopy)
+MyList.extend([11,12,13,14,15])
+print(MyList)
+print(MyList.index(11))
+MyList.insert(len(MyList),16)
+print(MyList)
+MyList.pop()
+print(MyList)
+MyList.remove(15)
+print(MyList)
+MyList.reverse()
+print(MyList)
+MyList.sort()
+print(MyList)
+from collections import Counter
+MyList = [1, 2, 3, 4, 1, 2, 3, 1, 2, 1, 5]
+ListCount = Counter(MyList)
+print(ListCount)
+for ThisItem in ListCount.items():
+    print("Item: ", ThisItem[0]," Appears: ", ThisItem[1])
+    print("The value 1 appears {0} times.".format(ListCount.get(1)))
